@@ -1,0 +1,15 @@
+import random
+
+def zgadnij_liczbe():
+    liczba_do_zgadniecia = random.randint(1,10)
+    while True:
+    zgadnij = int(input("Zgadnij liczbę od 1 do 10: "))
+    
+        if zgadnij == liczba_do_zgadniecia:
+        print('Grtaki, udało Ci się')
+            break
+        else:
+        print('niestety mordo, nie traiłeś, spróbuj jeszcze raz')
+        
+zgadnij.liczbe()
+

@@ -1,0 +1,1 @@
+input('Proszę wpisz cos')
