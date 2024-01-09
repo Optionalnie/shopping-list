@@ -4,22 +4,22 @@ shop_list = []
 
 while True:
 
-    decision = input('No elo, robimy zakupową listę? Wpisz "zakupy" aby zacząć tworzyć listę albo "exit" aby wyjsc z apki ew. wpisz "lista" aby wyswietlic aktualna liste zakupów: ')
+    decision = input('Lets make a shopping list! Enter "shop" to create shopping list, type "exit" to exit application, or you can type "list" to check shopping list: ')
 
-    if decision == 'zakupy':
+    if decision == 'shop':
         while True:
-            zakupy = input('Wpisz listę zakupów - Napisz "stop" aby zakończyć dodaniwe zakupów ')
-            if zakupy.lower() == 'stop':
+            shop = input('Enter goods that have to be purchased - Write "stop" to stop entering goods.')
+            if shop.lower() == 'stop':
                 break
-            shop_list.append(zakupy)
+            shop_list.append(shop)
         
     elif decision == 'exit':
         sys.exit
         
-    elif decision == 'lista':
-        print('Oto Twoja lista zakupów: ' + str(shop_list))    
-        
+    elif decision == 'list':
+        print('Here is your shopping list: ' + str(shop_list))    
+    
         
     else:
-        print('Zła komenda')
+        print('Wrong command')
         continue
